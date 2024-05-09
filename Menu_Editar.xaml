@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilAPP1.Menu_Editar"
+             BackgroundColor="#5564eb"
+             Title="Editar">
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Frame BackgroundColor="#FFFFFF" CornerRadius="10" Margin="0,10">
+                    <StackLayout>
+                        <Label Text="Editar Wyvern" FontSize="Large" HorizontalOptions="Center" Margin="0,10" TextColor="Black" />
+
+                        <Label Text="ID" FontAttributes="Bold" TextColor="Black" />
+                        <Entry Placeholder="ID" x:Name="idEntry" TextColor="Black" />
+
+                        <Label Text="Nombre" FontAttributes="Bold" TextColor="Black" />
+                        <Entry Placeholder="Nombre" x:Name="nombreEntry" IsEnabled="True" TextColor="Black" />
+
+                        <Label Text="Elemento" FontAttributes="Bold" TextColor="Black" />
+                        <Entry Placeholder="Elemento" x:Name="elementoEntry" TextColor="Black" />
+
+                        <Label Text="Tipo de Wyvern" FontAttributes="Bold" TextColor="Black" />
+                        <Picker Title="Selecciona un tipo de wyvern" x:Name="tipoWyvernPicker" TextColor="Black" />
+
+                        <Button Text="Buscar" Clicked="BuscarClicked" Margin="0,10,0,0" BackgroundColor="#5564eb" TextColor="#FFFFFF" />
+                        <Button Text="Actualizar" Clicked="ActualizarClicked" Margin="0,5" BackgroundColor="#5564eb" TextColor="#FFFFFF" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

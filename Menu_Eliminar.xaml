@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilAPP1.Menu_Eliminar"
+             BackgroundColor="#5564eb"
+             Title="Eliminar">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Frame BackgroundColor="#FFFFFF" CornerRadius="10" Margin="0,10">
+                    <StackLayout>
+                        <Label Text="Eliminar Wyvern" FontSize="Large" HorizontalOptions="Center" Margin="0,10" TextColor="Black" />
+
+                        <Label Text="ID" FontAttributes="Bold" TextColor="Black" />
+                        <Entry Placeholder="ID" x:Name="idEntry" IsEnabled="False" />
+
+                        <Label Text="Nombre" FontAttributes="Bold" TextColor="Black" />
+                        <Entry Placeholder="Nombre" x:Name="nombreEntry" TextColor="Black" IsEnabled="True" />
+
+                        <Label Text="Elemento" FontAttributes="Bold" TextColor="Black" />
+                        <Entry Placeholder="Elemento" x:Name="elementoEntry" TextColor="Black" IsEnabled="False" />
+
+                        <Label Text="ID Tipo de Wyvern" FontAttributes="Bold" TextColor="Black" />
+                        <Entry Placeholder="ID Tipo de Wyvern" x:Name="tipoWyvernIdEntry" TextColor="Black" IsEnabled="False" />
+
+                        <Button Text="Buscar" Clicked="BuscarClicked" Margin="0,10,0,0" BackgroundColor="#5564eb" TextColor="White" />
+                        <Button Text="Eliminar" Clicked="EliminarClicked" Margin="0,5" BackgroundColor="#5564eb" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
